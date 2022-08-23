@@ -11,7 +11,7 @@ export const addTodo = (todo) => ({ type: ADDED, payload: { todo } });
 
 export const ToggledTodo = (todoId) => ({ type: TOGGLED, payload: { todoId } });
 
-export const ColorSelected = (todoId, color) => ({
+export const SelectColor = (todoId, color) => ({
     type: COLOR_SELECTED,
     payload: { todoId, color },
 });
