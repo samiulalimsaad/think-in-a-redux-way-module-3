@@ -30,8 +30,9 @@ export const todoReducer = (state = initialState, action) => {
             return [
                 ...state,
                 {
-                    id: nextId(),
+                    id: nextId(state),
                     text: action.payload.todo,
+                    completed: false,
                 },
             ];
 
