@@ -18,13 +18,13 @@ export const filterReducer = (state = initialState, action) => {
             if (changeType === "added") {
                 return {
                     ...state,
-                    colors: [...state.colors, action.payload],
+                    colors: [...state.colors, action.payload.color],
                 };
             } else if (changeType === "removed") {
                 return {
                     ...state,
                     colors: state.colors.filter(
-                        (color) => color !== action.payload
+                        (color) => color !== action.payload.color
                     ),
                 };
             } else {

@@ -5,7 +5,7 @@ export const changeColor = (color, changeType) => ({
     payload: { color, changeType },
 });
 
-export const changeStatus = (color, changeType) => ({
+export const changeStatus = (status) => ({
     type: STATUS_CHANGED,
     payload: { status },
 });
